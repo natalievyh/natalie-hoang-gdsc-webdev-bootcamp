@@ -1,4 +1,65 @@
+@font-face {
+    font-family: "Crimson Pro";
+    src: url("");
+}
+
+:root {
+    box-sizing: border-box;
+    --blue: rgb(141, 176, 194);
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#fff,  var(--blue));
+    padding: 0 10vh;
+}
+
+.left-body {
+    width: 75%;
+}
+
+h1 {
+    font-family: "Caveat", cursive;
+    font-size: 4rem;
+}
+
+p {
+    font-family: "Crimson Pro", serif;
+}
 
 img {
-    width: 30vh;
+    display: block;
+    width: 30%;
+    border-radius: 100%;
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+}
+
+.github-btn {
+    display: flex;
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.github-container {
+    justify-self: center;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
