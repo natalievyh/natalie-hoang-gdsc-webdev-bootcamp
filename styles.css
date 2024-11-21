@@ -2,6 +2,8 @@
     box-sizing: border-box;
     --blue: rgb(141, 176, 194);
     --dark-blue: rgb(32, 84, 110);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
 }
 
 .nav-bar {
@@ -36,7 +38,8 @@ h1 {
 .container {
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 100%;
+    min-height: 90vh;
     background-image: linear-gradient(#fff,  var(--blue));
     padding: 0 10vh;
 }
@@ -61,8 +64,8 @@ img {
 }
 
 .logo {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     margin: 0;
 }
 
@@ -70,12 +73,13 @@ img {
     display: flex;
     width: 10rem;
     padding: 0.5rem 1rem;
-    border: 1px solid black;
+    gap: 0.5rem;
+    border: 1px solid var(--white);
+    background-color: var(--dark-blue);
     border-radius: 2rem;
     align-items: center;
     justify-content: space-evenly;
-    color: black;
-
+    color: white;
 }
 
 .github-container {
@@ -84,4 +88,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--dark-blue);
+    font-weight: 700;
 }
